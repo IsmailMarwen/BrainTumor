@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brain Tumor Detection</title>
+</head>
+<body>
+	<h2>Upload MRI Scan Image</h2>
+	<form method="POST" action="http://127.0.0.1:5000/" enctype="multipart/form-data">
+			<input type="file" name="file">
+			<br><br>
+			<input type="submit" value="Upload">
+	</form>
+	<img src="{{ url_for('display_image') }}" alt="Image">
+</body>
+</html>
